@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  /* background: rgb(2, 0, 36); */
+  background: linear-gradient(
+    173deg,
+    rgb(17, 10, 146) 0%,
+    rgba(36, 36, 148, 1) 37%,
+    rgb(9, 156, 185) 100%
+  );
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.todolist {
+  background-color: rgb(255, 255, 255);
+  height: 85%;
+  width: 35%;
+  padding: 20px 30px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.title {
+  font-size: 30px;
+  text-align: center;
+  color: rgb(22, 33, 97);
+  font-weight: bolder;
+}
+
+form {
+  background-color: rgb(235, 236, 236);
+  border-radius: 100px;
+  padding: 0px 15px;
+  height: 55px;
+  padding-right: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0px;
+}
+
+form input {
+  font-size: 16px;
+  background: none;
+  border: none;
+  width: 100%;
+}
+
+.button {
+  color: white;
+  font-size: 16px;
+  background: none;
+  border: none;
+  font-weight: 700;
+  background-color: rgb(216, 91, 91);
+  padding: 10px 40px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all linear 0.1s;
+}
+
+.button:hover {
+  background-color: rgb(173, 19, 19);
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.item_container {
+  max-height: 300px;
+  overflow: scroll;
+}
+
+.sub_item {
+  font-size: 18px;
+  display: flex;
+  /* justify-content: start; */
+  gap: 10px;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+  accent-color: rgb(202, 110, 110);
+}
+
+#btn {
+  padding: 3px 18px;
+}
+
+.line {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.479);
+}
+
+.text {
+  width: 30%;
+  font-size: 60px;
+  color: white;
+}
+.text span {
+  color: rgb(209, 117, 117);
+}
+
+.float {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+#task {
+  max-width: 280px;
+  overflow-wrap: break-word;
+}
